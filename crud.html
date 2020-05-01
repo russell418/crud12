@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="crud.css">
+</head>
+<body>
+  <div class="container">
+        <div class="row">
+              <div class="col-lg-3">
+                <form action="">
+                  <input type="text" class="form-control" id="identifiant">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="nom" placeholder="Entrer votre Nom">
+                    <span id="errornom"></span>
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="prenom" placeholder="Entrer votre Prenom">
+                      <span id="errorprenom" ></span>
+                      </div>
+                      <div class="form-group">
+                        <label for="poste"> Etes-vous marier</label>
+                        <select class="form-control" id="status">
+                            <option value="true" >Oui</option>
+                            <option value="false">Non</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="poste">Selectionner votre Poste</label>
+                      <select class="form-control" id="poste">
+                          <option value="directeur generale">directeur generale</option>
+                          <option value="directeur generale adjoint">directeur generale adjoint</option>
+                          <option value="drh">drh</option>
+                          <option value="assistant drh">assistant drh</option>
+                          <option value="directeur tresorerie">directeur tresorerie</option>
+                          <option value="directeur des operations">directeur des operations</option>
+                          <option value="directeur des credits">directeur des credits</option>
+                          <option value="directeur informatique">directeur informatique</option>
+                          <option value="support reseau">support reseau</option>
+                          <option value="developpeur">developpeur</option>
+                          <option value="caissier">caissier</option>
+                          </select>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="phone" placeholder="Entrer votre Numeros de télephone">
+                    <span id="errorphone"></span>
+                    </div>
+                    <div class="form-group">
+                      <input type="email" class="form-control" id="email" placeholder="Entrer votre Email">
+                      <span id="erroremail"></span>
+                    </div>
+                    <div class="form-group">
+                      <label for="pays">Selectionner votre Pays</label>
+                      <select class="form-control" id="pays">
+                          <option value="RDC">RDC</option>
+                          <option value="OUGANDA">OUGANDA</option>
+                          <option value="RWANDA">RWANDA</option>
+                          <option value="BURUNDI">BURUNDI</option>
+                          <option value="TANZANIE">TANZANIE</option>
+                          <option value="ANGOLA">ANGOLA</option>
+                          <option value="MOZAMBIQUE">MOZAMBIQUE</option>
+                          <option value="AFRIQUE DU SUD">AFRIQUE DU SUD</option>
+                          <option value="FRANCE">FRANCE</option>
+                          <option value="BELGIQUE">BELGIQUE</option>
+                          <option value="BRESILE">BRESILE</option>
+                          <option value="ETATS UNIS">ETATS UNIS</option>
+                          <option value="ALLEMAGNE">ALLEMAGNE</option>
+                          </select>
+                  </div> 
+                  <button type="button" id="save" class="btn btn-primary">Enregistre</button>
+                  <button type="button" id="update" class="btn btn-warning">Mise à jour</button>
+                </form>
+              </div>
+              <div clas="col-lg-6">
+                <table class="table">
+                  <thead class="thead-dark">
+                      <tr>
+                          <th>Nom</th>
+                          <th>Prenom</th>
+                          <th>Marier</th>
+                          <th>Poste</th>
+                          <th>Telephone</th>
+                          <th>Email</th>
+                          <th>Pays</th>
+                          <th>Action</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+  
+                  </tbody>
+              </table>
+              </div>
+        </div>
+  </div>
+  <script src="crud.js"></script>
+</body>
+</html>
